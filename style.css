@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --wood: #7A0000;
+    --cherry: #FD292F;
+    --peel: #FE8535;
+    --orange: #FDB10B;
+    --light: #FEF4C0;
+}
+
+.container {
+    max-width: 2560px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    color: var(--wood);
+    background-color: var(--light);
+}
+
+body a {
+    color: var(--wood);
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 34px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+}
+
+.page-container {
+    max-width: 2560px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 32px;
+}
+
+header {
+    background-color: var(--wood);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    color: var(--orange);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav.page-container,
+footer .page-container {
+    margin-bottom: 0px;
+}
+
+#logo-div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#logo-div img {
+    height: 60px;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+#nav-links a {
+    color: var(--orange);
+}
+
+.banner {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: var(--orange);
+    color: var(--wood);
+    outline: none;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    gap: 36px;
+    text-align: justify;
+    height: 225px;
+}
+
+.section > div {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.section-img {
+    min-width: 300px;
+    height: 200px;
+}
+
+footer {
+    background-color: var(--cherry);
+    padding: 16px 0;
+}
+
+footer * {
+    color: var(--light);
+}
+
+@media (max-width: 2560px){
+    .page-container {
+        max-width: 1440px;
+    }
+}
+
+@media (max-width: 1440px){
+    .page-container {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px){
+    .page-container {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px){
+    .page-container {
+        max-width: 425px;
+    }
+}
+
+@media (max-width: 425px){
+    .page-container {
+        max-width: 375px;
+    }
+}
+
+@media (max-width: 375px){
+    .page-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px){
+    .page-container {
+        max-width: 320px;
+    }
+}
